@@ -12,6 +12,8 @@
     color: white;
     box-sizing: border-box;
     font-family: static;
+    border: none;
+    outline: none;
 }
 
 body{
@@ -24,28 +26,31 @@ body{
     flex-flow: column;
 }
 
-#nav-menu{
+#nav-menu ul{
     width: 100%;
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;    
     flex-wrap: wrap;
-   
+    gap: 15px;
 }
 
-#nav-menu a{
-    border-radius: 5px;
+#nav-menu ul li a{
     padding: 15px 10px;
     color: white;
     font-size: 1.3em;
 }
 
 
-#nav-menu a p{
+#nav-menu ul li a{
     transition: all 0.5s;
     border-bottom: 2px solid #ffffffe9;
 }
-#nav-menu a p:hover{
+#nav-menu a:hover{
     border-bottom: 2px solid #00ff9db1;
 }
+#nav-menu ul li .active{
+    color: rgb(255, 0, 179);
+}
+

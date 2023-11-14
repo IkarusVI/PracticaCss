@@ -95,3 +95,73 @@ tbody{
         transform: rotate(360deg);
     }
 }
+#container-modal{
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    z-index: 10000;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    font-size: 1.5em;
+}
+.modal form{
+    width: 1300px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #0E1538;
+    padding: 20px;
+    border-radius: 5px;
+}
+.modal label{
+    color: rgba(158, 238, 38, 0.874);
+    transform: translateY(5px);
+}
+
+.modal form input{
+    background-color: rgba(31, 214, 86, 0.147);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 1em;
+}
+.modal form select{
+    background-color: rgba(31, 214, 86, 0.432);
+    border-radius: 5px;
+    font-size: 1em;
+    transform: translateY(5px);
+}
+
+#save{
+    padding: 5px;
+    background-color: #8CD328;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#save:hover{
+    transition: all 0.3s ease;
+    background-color: #2d9850b2;
+}
+#cancel{
+    padding: 5px;
+    background-color: #af2bd0d8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#cancel:hover{
+    transition: all 0.3s ease;
+    background-color: #cc00ff7e;
+}
+.modify{
+    cursor: pointer;
+}
+
+.modify:hover{
+    transition: all 0.3s ease;
+    color: rgba(158, 238, 38, 0.874);
+}
